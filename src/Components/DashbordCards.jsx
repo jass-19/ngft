@@ -1,6 +1,8 @@
 import React from "react";
 import SearchIcon from "../Images/svgs/search.svg";
 import Dots from "../Images/svgs/dots.svg";
+// import Bar from "../Components/Barchart";
+
 function DashbordCards({ setOpen, open }) {
   return (
     <>
@@ -131,19 +133,54 @@ function DashbordCards({ setOpen, open }) {
         </div>
 
         {/* Chart-section  */}
-        <div className="chat_wrapper">
+        <div className="chat_wrapper px-3">
           <div className="row">
             <div className="col-3">
-              <div className="chart_content_wrapper">
-                <div className="d-flex justify-content-between   bg-white">
-                  <h3 className="fw-400 fade_grey fs-xs">Total Sells</h3>
+              <div className="chart_content_wrapper p-2 bg-white">
+                <div className="d-flex align-items-center justify-content-between">
+                  <h3 className="fw-400 fade_grey mb-0 fs-xs"> Active Users</h3>
                   <div>
                     <img src={Dots} alt="dots" />
                   </div>
                 </div>
+                <div className="grey_box my-2 text-center w-100 p-2">
+                  <h3 className="fw-500 black mb-0 fs-lg">34</h3>
+                </div>
+                <div className="d-flex align-items-center py-1 bottom_border  justify-content-between">
+                  <h4 className="fw-400 fade_grey mb-0 fs-xs"> City</h4>
+                  <h4 className="fw-400 fade_grey mb-0 fs-xs"> Users</h4>
+                </div>
+                <div className="d-flex align-items-center py-1 bottom_border  justify-content-between">
+                  <h4 className="fw-400 black mb-0 fs-xs"> Hisar</h4>
+                  <h4 className="fw-400 black mb-0 fs-xs"> 12</h4>
+                </div>
+                <div className="d-flex align-items-center py-1 bottom_border  justify-content-between">
+                  <h4 className="fw-400 black mb-0 fs-xs"> Hansi</h4>
+                  <h4 className="fw-400 black mb-0 fs-xs"> 8</h4>
+                </div>
+                <div className="d-flex align-items-center py-1 bottom_border  justify-content-between">
+                  <h4 className="fw-400 black mb-0 fs-xs"> Fatehabad</h4>
+                  <h4 className="fw-400 black mb-0 fs-xs"> 4</h4>
+                </div>
+                <div className="d-flex align-items-center py-1 bottom_border  justify-content-between">
+                  <h4 className="fw-400 black mb-0 fs-xs"> Siwani</h4>
+                  <h4 className="fw-400 black mb-0 fs-xs"> 9</h4>
+                </div>
+                <div className="d-flex align-items-center py-1 bottom_border  justify-content-between">
+                  <h4 className="fw-400 black mb-0 fs-xs"> Agroha</h4>
+                  <h4 className="fw-400 black mb-0 fs-xs"> 10</h4>
+                </div>
+                <div className="d-flex align-items-center py-1 bottom_border  justify-content-between">
+                  <h4 className="fw-400 black mb-0 fs-xs"> Barwala</h4>
+                  <h4 className="fw-400 black mb-0 fs-xs"> 18</h4>
+                </div>
               </div>
             </div>
-            <div className="col-8"></div>
+            <div className="col-8">
+              <div className="chart_box">
+                <img src="../Images/Png/frame.png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
