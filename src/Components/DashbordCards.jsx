@@ -1,8 +1,9 @@
 import React from "react";
 import SearchIcon from "../Images/svgs/search.svg";
 import Dots from "../Images/svgs/dots.svg";
-import Graph from "../Images/svgs/d.svg";
+// import Graph from "../Images/svgs/d.svg";
 import Donat from "../Images/svgs/donat.svg";
+import ApexBarChart from "./bar";
 
 function DashbordCards({ setOpen, open }) {
   return (
@@ -137,7 +138,7 @@ function DashbordCards({ setOpen, open }) {
         <div className="chat_wrapper px-3">
           <div className="row  justify-content-between ">
             <div className="col-xl-3 col-lg-5 mb-4 col-12 ">
-              <div className="    chart_content_wrapper p-2 bg-white">
+              <div className="chart_content_wrapper p-2 bg-white">
                 <div className="d-flex align-items-center justify-content-between">
                   <h3 className="fw-400 fade_grey mb-0 fs-xs"> Active Users</h3>
                   <div>
@@ -185,7 +186,8 @@ function DashbordCards({ setOpen, open }) {
                     <img src={Dots} alt="dots" />
                   </div>
                 </div>
-                <img src={Graph} className="w-100 img_height " alt="" />
+                <ApexBarChart className="w-100" />
+                {/* <img src={Graph} className="w-100 img_height " alt="" /> */}
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import Logo from "../Images/svgs/logo.svg";
 import Catalog from "../Images/svgs/catalog.svg";
+
 function Sidebar({ setOpen, open }) {
   return (
     <>
