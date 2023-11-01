@@ -300,6 +300,10 @@ body {
 .bottom_border {
   border-bottom: 1px solid #d9d9d9;
 }
+.donut {
+  /* width: 200px !important; */
+  height: 230px;
+}
 /* ===========Media-query========== */
 @media (max-width: 468px) {
   .form_box {

@@ -1,9 +1,9 @@
 import React from "react";
 import SearchIcon from "../Images/svgs/search.svg";
 import Dots from "../Images/svgs/dots.svg";
-// import Graph from "../Images/svgs/d.svg";
-import Donat from "../Images/svgs/donat.svg";
+
 import ApexBarChart from "./bar";
+import Donut from "./donatchart";
 
 function DashbordCards({ setOpen, open }) {
   return (
@@ -134,7 +134,7 @@ function DashbordCards({ setOpen, open }) {
           </div>
         </div>
 
-        {/* Chart-section  */}
+        {/* Chart-section-bar  */}
         <div className="chat_wrapper px-3">
           <div className="row  justify-content-between ">
             <div className="col-xl-3 col-lg-5 mb-4 col-12 ">
@@ -187,13 +187,12 @@ function DashbordCards({ setOpen, open }) {
                   </div>
                 </div>
                 <ApexBarChart className="w-100" />
-                {/* <img src={Graph} className="w-100 img_height " alt="" /> */}
               </div>
             </div>
           </div>
         </div>
 
-        {/* Chart-section  */}
+        {/* Chart-section-donat  */}
         <div className="chat_wrapper px-3  mt-4">
           <div className="row  justify-content-between ">
             <div className="col-xl-9 col-lg-7 mb-xl-0 mb-4 col-12 ">
@@ -205,7 +204,7 @@ function DashbordCards({ setOpen, open }) {
                   </div>
                 </div>
 
-                <div className="d-flex px-2   row align-items-center py-2 bottom_border  justify-content-between">
+                <div className="d-flex px-2  mt-2 row align-items-center py-2 bottom_border  justify-content-between">
                   <h4 className="fw-400 col fade_grey mb-0 fs-xs"> No</h4>
                   <h4 className="fw-400 col fade_grey mb-0 fs-xs"> Status</h4>
                   <h4 className="fw-400 col fade_grey mb-0 fs-xs"> City</h4>
@@ -316,14 +315,10 @@ function DashbordCards({ setOpen, open }) {
                   </div>
                 </div>
                 <div className="text-center">
-                  <img
-                    src={Donat}
-                    className=" mx-auto w-75  text-center  mt-2"
-                    alt=""
-                  />
+                  <Donut />
                 </div>
 
-                <div className="d-flex     align-items-center mt-3 p-2 bottom_border  justify-content-between">
+                <div className="d-flex     align-items-center   p-2 bottom_border  justify-content-between">
                   <h4 className="fw-400 col fade_grey mb-0 fs-xs"> Source</h4>
                   <h4 className="fw-400 col text-center fade_grey mb-0 fs-xs">
                     Orders
