@@ -9,7 +9,7 @@ function Main() {
     <>
       <div>
         <>
-          <div className=" d-flex w-100">
+          <div className=" d-flex h-100 w-100">
             {<Sidebar setOpen={setOpen} open={open} />}
             {<DashbordCards setOpen={setOpen} open={open} />}
           </div>
