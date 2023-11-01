@@ -6,7 +6,7 @@ import Catalog from "../Images/svgs/catalog.svg";
 function Sidebar({ setOpen, open }) {
   return (
     <>
-      <aside className={`sidebar ${open ? "d-sm-block" : "d-none"}`}>
+      <aside className={`sidebar   ${open ? "d-sm-block" : "d-none"}`}>
         <div className="logo_bar bg_brown d-flex justify-content-center p-2">
           <div>
             <img className="mx-2" src={Logo} alt="Logo" />

@@ -61,7 +61,6 @@ function DashbordCards({ setOpen, open }) {
         <div className="w-100 px-3 py-4">
           <div className="d-flex   justify-content-between">
             <div className="d-flex">
-              {/* <button onClick={() => setOpen(!open)}>Click</button> */}
               <h1 className="fs-400   black fs-lg">Dashboard</h1>
             </div>
             <button className="export_btn  white fs-xxs px-3 py-2 fw-400 border-0">
@@ -195,8 +194,8 @@ function DashbordCards({ setOpen, open }) {
         {/* Chart-section-donat  */}
         <div className="chat_wrapper px-3  mt-4">
           <div className="row  justify-content-between ">
-            <div className="col-xl-9 col-lg-7 mb-xl-0 mb-4 col-12 ">
-              <div className=" px-3   chart_content_wrapper p-2 bg-white">
+            <div className="col-xl-9 table_box col-lg-7 mb-xl-0 mb-4 col-12 ">
+              <div className=" px-3 tables mb-2 chart_content_wrapper p-2 bg-white">
                 <div className="d-flex align-items-center justify-content-between">
                   <h3 className="fw-600 black  mb-0 fs-xs">Recent Orders</h3>
                   <div>
